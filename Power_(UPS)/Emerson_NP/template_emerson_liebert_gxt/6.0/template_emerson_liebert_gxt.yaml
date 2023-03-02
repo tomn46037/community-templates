@@ -449,3 +449,47 @@ zabbix_export:
             -
               value: '7'
               newvalue: Reducer
+  graphs:
+    -
+      uuid: e7dfe0628bb641d2bac513ef09d27783
+      name: 'Battery Time Remaining'
+      graph_items:
+        -
+          color: 1A7C11
+          calc_fnc: ALL
+          item:
+            host: Emerson_Liebert
+            key: upsEstimatedMinutesRemaining
+        -
+          sortorder: '1'
+          color: '274482'
+          yaxisside: RIGHT
+          calc_fnc: ALL
+          item:
+            host: Emerson_Liebert
+            key: upsEstimatedChargeRemaining
+    -
+      uuid: e285330c7509448aba35b8ad4115139d
+      name: 'Input/Output Volts and Amps'
+      graph_items:
+        -
+          color: 1A7C11
+          calc_fnc: ALL
+          item:
+            host: Emerson_Liebert
+            key: upsConfigInputVoltage
+        -
+          sortorder: '1'
+          color: '274482'
+          calc_fnc: ALL
+          item:
+            host: Emerson_Liebert
+            key: upsConfigOutputVoltage
+        -
+          sortorder: '2'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: ALL
+          item:
+            host: Emerson_Liebert
+            key: upsConfigOutputAmps
