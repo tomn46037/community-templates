@@ -107,7 +107,9 @@ There are no template links in this template.
 There are no triggers in this template.
 
 ## Graphs
+
 |Name|Description|
+|----|-----------|
 |Battery Time Remaining|Shows battery time and percent remaining|
 |Input/Output Volts and Amps|Shows input and output volts and only output amps|
 
